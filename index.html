@@ -8,32 +8,23 @@
     <meta name="generator" content="Bluefish 2.2.11" >
     <title>UDE</title>
 
-    
-
     <style>
-    
-    
     .pai{ display: flex;
-     margin-left: 11%; 
-     margin-top:10%;   
+     margin-left: 11%;
+     margin-top:10%;
      margin-bottom: 8%
-        flex-diretion: row; 
+        flex-diretion: row;
         flex-wrap: wrap;
        align-items: center;
       width: 80%;
-   
-    
     }
-    
+
     .filho1{  display: flex;
     margin-top: 14%;
               display: flex;
               align-items: center;
              margin-left: 3%;
              margin-right: -1%;
-          
-         
-           
     }
     .pt-4{
 width: 90%;
@@ -44,25 +35,18 @@ width: 90%;
           font-size: 100%;
           margin-bottom: 2%;
           width: 100%;
-          
-          
-          
     }
       body{ background-image: url("fundo.png");
-            background-attachment: fixed;           
+            background-attachment: fixed;
             background-size: 70%;
             background-repeat: no-repeat;
             background-position:center top;
-           
-        ;
-          
-           
  }
     .pb-3{ display: flex;
     align-items: baseline;
 padding-top: 3%;
 padding-bottom: 1%;
-        flex-wrap: nowrap;       
+        flex-wrap: nowrap;
         justify-content: space-between;
    background-color: white;
    margin-top: -10%;
@@ -70,39 +54,35 @@ padding-bottom: 1%;
    width: 100%;
     opacity: 0.98;
     }
-    
+
     ul{ margin-top: 3%;
     background-color: white;
-     height: :40%;    
+     height: :40%;
      width: 80%;
     display: flex;
     flex-wrap: nowrap;
     flex-diretion: row;
     list-style: none;
-      gap:3rem; 
+      gap:3rem;
       font-weight: bold;
       font-size: 100%;
       font-family: sans-serif;
-      
-      
-      
        }
-      .bg2{ 
+      .bg2{
        display:flex;
       background-image:url("bg2.png");
        width: 100%;
   height: 100%;
-  border: 
+  border:
   background-repeat: no-repeat;
   background-position: bottom right;
   margin-top: 15%;
-            
              }
-     nav{ margin-left: 30%; display: flex; width: 100%; height: 5%; align-items: center ; flex-diretion: row; 
+     nav{ margin-left: 30%; display: flex; width: 100%; height: 5%; align-items: center ; flex-diretion: row;
         flex-wrap: wrap;
      }
-     
-     .bigbntref01{ margin-top: 7%; 
+
+     .bigbntref01{ margin-top: 7%;
        }
         
        .bigbnting02  { margin-top: 15%;  }
@@ -112,7 +92,7 @@ padding-bottom: 1%;
          .bigbntvio06  { margin-top: 15%;  }
       
        li:hover{ cursor:pointer;opacity:0.5;  }
-   
+    
      .um:hover{cursor:pointer;opacity:0.5;
     }
      .dois:hover{cursor:pointer;opacity:0.5;
@@ -126,26 +106,32 @@ padding-bottom: 1%;
      .seis:hover{cursor:pointer;opacity:0.5;
     }
     
-    @media (max-width: 700px) {  nav{ margin-left: 5%; display: flex; width: 100%; height: 3%; align-items: center ; flex-diretion: row; 
+    /* estilos para transformar a imagem em botão acessível */
+    .bigbntref01 .btn-image { display: inline-block; text-decoration: none; border: 0; padding: 0; }
+    .bigbntref01 .btn-image img { cursor: pointer; display: block; width: 60%; transition: opacity .15s ease, transform .08s ease; }
+    .bigbntref01 .btn-image:hover img { opacity: 0.9; transform: translateY(-2px); }
+    .bigbntref01 .btn-image:focus { outline: none; box-shadow: 0 0 0 4px rgba(21,156,228,0.25); border-radius: 4px; }
+
+    @media (max-width: 700px) {  nav{ margin-left: 5%; display: flex; width: 100%; height: 3%; align-items: center ; flex-diretion: row;
         flex-wrap: wrap;  font-size:12px; padding-right: 3%;  font-family: sans-serif;
      }  
      
       ul{ margin-top: 3%;
     background-color: white;
-     height: :40%;    
+     height: :40%;
      width: 80%;
     display: flex;
     flex-wrap: nowrap;
     flex-diretion: row;
     list-style: none;
-      gap:2rem; 
+      gap:2rem;
       font-weight: bold;
       font-size: 100%;
       font-family: sans-serif;
       } 
       
        body{ background-image: url("fundo.png");
-            background-attachment: fixed;           
+            background-attachment: fixed;
             background-size: 100%;
             background-repeat: no-repeat;
             background-position:center top;}  }
@@ -153,8 +139,6 @@ padding-bottom: 1%;
        </style>
        
    
-    
- 
  
   <body>
     
@@ -176,7 +160,7 @@ padding-bottom: 1%;
      
       <div class="filho1">
       <div class="um">
-     <a href="pgref.html" > <img src="b1ref.png" alt="descrição da imagem" style="width:60%"; position: fixed;  > </a>  </div>
+     <a href="pgref.html" > <img src="b1ref.png" alt="descrição da imagem" style="width:60%;"> </a>  </div>
     
    
     <div class="dois">  <img src="b2ing.png" alt="descrição da imagem" id="01" style="width:60%">
@@ -200,21 +184,21 @@ padding-bottom: 1%;
         <p>  </p>
 
         <div class="bg2">
-       <div class="bigbntref01">   <img src="bigbntref01.png" alt="descrição da imagem" style="width:60%"; >
-         <div class="bigbnting02">   <img src="bigbnting02.png" alt="descrição da imagem" style="width:60%"; >
-  </div>
-   <div class="bigbntinf03">   <img src="bigbntinf03.png" alt="descrição da imagem" style="width:60%"; >
-  </div>
-   <div class="bigbntdes04">   <img src="bigbntdes04.png" alt="descrição da imagem" style="width:60%"; >
-  </div>
-   <div class="bigbnttec05">   <img src="bigbnttec05.png" alt="descrição da imagem" style="width:60%"; >
-  </div>
-   <div class="bigbntvio06">   <img src="bigbntvio06.png" alt="descrição da imagem" style="width:60%"; >
-  </div>
+       <div class="bigbntref01">
+         <!-- imagem transformada em botão/link para pgref.html -->
+         <a href="pgref.html" class="btn-image" aria-label="Ir para página de referências">
+           <img src="bigbntref01.png" alt="Botão Referências">
+         </a>
        </div>
-            
-       
+
+       <div class="bigbnting02">   <img src="bigbnting02.png" alt="descrição da imagem" style="width:60%"> </div>
+       <div class="bigbntinf03">   <img src="bigbntinf03.png" alt="descrição da imagem" style="width:60%"> </div>
+       <div class="bigbntdes04">   <img src="bigbntdes04.png" alt="descrição da imagem" style="width:60%"> </div>
+       <div class="bigbnttec05">   <img src="bigbnttec05.png" alt="descrição da imagem" style="width:60%"> </div>
+       <div class="bigbntvio06">   <img src="bigbntvio06.png" alt="descrição da imagem" style="width:60%"> </div>
+
        </div>
+
 </main>
 </div>
   </body>
