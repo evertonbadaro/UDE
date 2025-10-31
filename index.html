@@ -88,7 +88,8 @@ padding-bottom: 1%;
      /* reset specific top margins and center each big button */
      .bigbntref01, .bigbnting02, .bigbntdes04, .bigbnttec05, .bigbntvio06 { margin-top: 0; }
      .bg2 > div { width: 100%; display: flex; justify-content: center; }
-     .bg2 img { width: 60%; max-width: 360px; height: auto; display: block; }
+     /* uniform size for all big buttons */
+     .bg2 img { width: 320px; max-width: 60%; height: auto; display: block; }
 
        .bigbnting02  { }
        .bigbntinf03 { margin-top: 15%;  }
@@ -112,10 +113,10 @@ padding-bottom: 1%;
     }
 
     /* estilos para transformar a imagem em botão acessível */
-    .bigbntref01 .btn-image { display: inline-block; text-decoration: none; border: 0; padding: 0; }
-    .bigbntref01 .btn-image img { cursor: pointer; display: block; width: 60%; transition: opacity .15s ease, transform .08s ease; }
-    .bigbntref01 .btn-image:hover img { opacity: 0.9; transform: translateY(-2px); }
-    .bigbntref01 .btn-image:focus { outline: none; box-shadow: 0 0 0 4px rgba(21,156,228,0.25); border-radius: 4px; }
+    .btn-image { display: inline-block; text-decoration: none; border: 0; padding: 0; }
+    .btn-image img { cursor: pointer; display: block; width: 320px; max-width: 60%; transition: opacity .15s ease, transform .08s ease; }
+    .btn-image:hover img { opacity: 0.9; transform: translateY(-2px); }
+    .btn-image:focus { outline: none; box-shadow: 0 0 0 4px rgba(21,156,228,0.25); border-radius: 4px; }
 
     @media (max-width: 700px) {  nav{ margin-left: 5%; display: flex; width: 100%; height: 3%; align-items: center ; flex-diretion: row;
         flex-wrap: wrap;  font-size:12px; padding-right: 3%;  font-family: sans-serif;
@@ -193,11 +194,31 @@ padding-bottom: 1%;
          </a>
        </div>
 
-       <div class="bigbnting02">   <img src="bigbnting02.png" alt="descrição da imagem"> </div>
-       <div class="bigbntinf03">   <img src="bigbntinf03.png" alt="descrição da imagem" style="width:60%;"> </div>
-       <div class="bigbntdes04">   <img src="bigbntdes04.png" alt="descrição da imagem"> </div>
-       <div class="bigbnttec05">   <img src="bigbnttec05.png" alt="descrição da imagem"> </div>
-       <div class="bigbntvio06">   <img src="bigbntvio06.png" alt="descrição da imagem"> </div>
+       <div class="bigbnting02">
+         <a href="pgref.html" class="btn-image" aria-label="Ir para página de referências">
+           <img src="bigbnting02.png" alt="Botão Ingresso">
+         </a>
+       </div>
+
+       <div class="bigbntinf03">   <img src="bigbntinf03.png" alt="descrição da imagem" style="width:60%;"></div>
+
+       <div class="bigbntdes04">
+         <a href="pgref.html" class="btn-image" aria-label="Ir para página de referências">
+           <img src="bigbntdes04.png" alt="Botão Desenvolvimento">
+         </a>
+       </div>
+
+       <div class="bigbnttec05">
+         <a href="pgref.html" class="btn-image" aria-label="Ir para página de referências">
+           <img src="bigbnttec05.png" alt="Botão Tecnologia">
+         </a>
+       </div>
+
+       <div class="bigbntvio06">
+         <a href="pgref.html" class="btn-image" aria-label="Ir para página de referências">
+           <img src="bigbntvio06.png" alt="Botão Vio">
+         </a>
+       </div>
 
        </div>
 
