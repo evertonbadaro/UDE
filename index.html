@@ -70,9 +70,12 @@ padding-bottom: 1%;
        }
       .bg2{
        display:flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 1rem;
       background-image:url("bg2.png");
        width: 100%;
-  height: 100%;
+  /*height: 100%; removed to allow content height */
   border:
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -82,15 +85,17 @@ padding-bottom: 1%;
         flex-wrap: wrap;
      }
 
-     .bigbntref01{ margin-top: 7%;
-       }
-        
-       .bigbnting02  { margin-top: 15%;  }
+     /* reset specific top margins and center each big button */
+     .bigbntref01, .bigbnting02, .bigbntdes04, .bigbnttec05, .bigbntvio06 { margin-top: 0; }
+     .bg2 > div { width: 100%; display: flex; justify-content: center; }
+     .bg2 img { width: 60%; max-width: 360px; height: auto; display: block; }
+
+       .bigbnting02  { }
        .bigbntinf03 { margin-top: 15%;  }
-         .bigbntdes04  { margin-top: 15%;  }
-       .bigbnttec05 { margin-top: 15%;  }
-         .bigbntvio06  { margin-top: 15%;  }
-      
+         .bigbntdes04  { }
+       .bigbnttec05 { }
+         .bigbntvio06  { }
+
        li:hover{ cursor:pointer;opacity:0.5;  }
     
      .um:hover{cursor:pointer;opacity:0.5;
@@ -105,7 +110,7 @@ padding-bottom: 1%;
     }
      .seis:hover{cursor:pointer;opacity:0.5;
     }
-    
+
     /* estilos para transformar a imagem em botão acessível */
     .bigbntref01 .btn-image { display: inline-block; text-decoration: none; border: 0; padding: 0; }
     .bigbntref01 .btn-image img { cursor: pointer; display: block; width: 60%; transition: opacity .15s ease, transform .08s ease; }
@@ -114,8 +119,8 @@ padding-bottom: 1%;
 
     @media (max-width: 700px) {  nav{ margin-left: 5%; display: flex; width: 100%; height: 3%; align-items: center ; flex-diretion: row;
         flex-wrap: wrap;  font-size:12px; padding-right: 3%;  font-family: sans-serif;
-     }  
-     
+     }
+
       ul{ margin-top: 3%;
     background-color: white;
      height: :40%;
@@ -128,24 +133,22 @@ padding-bottom: 1%;
       font-weight: bold;
       font-size: 100%;
       font-family: sans-serif;
-      } 
-      
+      }
+
        body{ background-image: url("fundo.png");
             background-attachment: fixed;
             background-size: 100%;
             background-repeat: no-repeat;
             background-position:center top;}  }
-     
+
        </style>
-       
-   
- 
+
   <body>
-    
+
 <main>
- 
+
     <header class="pb-3">
-     
+
     <img src="ude.png" style="width: 14%; margin-top: 0%; margin-left: 7%"> 
 <nav>   
     <ul> 
@@ -157,27 +160,26 @@ padding-bottom: 1%;
     </header>
 
      <div class="pai">
-     
+
       <div class="filho1">
       <div class="um">
      <a href="pgref.html" > <img src="b1ref.png" alt="descrição da imagem" style="width:60%;"> </a>  </div>
-    
-   
+
     <div class="dois">  <img src="b2ing.png" alt="descrição da imagem" id="01" style="width:60%">
     </div>
-   
+
      <div class="tres">  <img src="b3inf.png" alt="descrição da imagem" style="width:60%">
     </div>
-     
+
        <div class="quatro">  <img src="b4des.png" alt="descrição da imagem" style="width:60%">
   </div>
-  
+
       <div class="cinco">  <img src="b5tec.png" alt="descrição da imagem" style="width:60%">
       </div>
-      
+
      <div class="seis">   <img src="b6vio.png" alt="descrição da imagem" style="width:60%">
   </div>
-             
+
     </div>
 <div class="pt-4">
 &copy; Desenvolvido pela UDE - (Unidade de Desenvolvimento em Estudos) 
@@ -191,11 +193,11 @@ padding-bottom: 1%;
          </a>
        </div>
 
-       <div class="bigbnting02">   <img src="bigbnting02.png" alt="descrição da imagem" style="width:60%"> </div>
-       <div class="bigbntinf03">   <img src="bigbntinf03.png" alt="descrição da imagem" style="width:60%"> </div>
-       <div class="bigbntdes04">   <img src="bigbntdes04.png" alt="descrição da imagem" style="width:60%"> </div>
-       <div class="bigbnttec05">   <img src="bigbnttec05.png" alt="descrição da imagem" style="width:60%"> </div>
-       <div class="bigbntvio06">   <img src="bigbntvio06.png" alt="descrição da imagem" style="width:60%"> </div>
+       <div class="bigbnting02">   <img src="bigbnting02.png" alt="descrição da imagem"> </div>
+       <div class="bigbntinf03">   <img src="bigbntinf03.png" alt="descrição da imagem" style="width:60%;"> </div>
+       <div class="bigbntdes04">   <img src="bigbntdes04.png" alt="descrição da imagem"> </div>
+       <div class="bigbnttec05">   <img src="bigbnttec05.png" alt="descrição da imagem"> </div>
+       <div class="bigbntvio06">   <img src="bigbntvio06.png" alt="descrição da imagem"> </div>
 
        </div>
 
